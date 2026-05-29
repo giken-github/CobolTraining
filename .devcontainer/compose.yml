@@ -3,7 +3,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.devenvironment
-    container_name: coboldevenv
     volumes:
       - ../..:/workspaces:cached
     command: sleep infinity
@@ -14,7 +13,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.db
-    container_name: coboldevenvdb
     restart: unless-stopped
     volumes:
       - postgres-data:/var/lib/postgresql/data
