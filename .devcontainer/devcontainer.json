@@ -13,8 +13,14 @@
 		}
 	},
 	"features": {
-		"ghcr.io/devcontainers/features/node:1": {}
-	},
+		"ghcr.io/devcontainers/features/node:1": {},
+	    "ghcr.io/jsburckhardt/devcontainer-features/uv:1": {
+            "version": "latest"
+        },
+        "ghcr.io/robbert229/devcontainer-features/postgresql-client:1": {
+            "version": "18"
+        }
+    }
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 	// Configure tool-specific properties.
