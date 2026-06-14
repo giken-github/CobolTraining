@@ -26,12 +26,6 @@ GNUCOBOL_SRC_URL="https://github.com/opensourcecobol/gnucobol-osscons-patch/arch
 cd "${SCRIPT_DIR}"
 echo "Start Building : $(date)" >${BUILD_LOG_FILE}
 
-echo "Generate ja_JP.SJIS locale ... "
-{
-    echo "ja_JP.SJIS SHIFT_JIS" >> /etc/locale.gen
-    locale-gen
-}
-
 # 必要なパッケージをインストールする
 echo "Installing required packages ..."
 {
