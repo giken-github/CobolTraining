@@ -13,6 +13,8 @@
       * ファイル変数とファイルとの紐づけ など
 
        DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 END-FLG     PIC X     VALUE "N".
       * データの定義 など
 
        PROCEDURE DIVISION.
