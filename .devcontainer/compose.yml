@@ -12,7 +12,7 @@ services:
   db:
     build:
       context: .
-      dockerfile: Dockerfile.db
+      dockerfile: Dockerfile.database
     restart: unless-stopped
     volumes:
       - postgres-data:/var/lib/postgresql/data
